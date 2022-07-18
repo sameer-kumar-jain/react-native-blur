@@ -4,7 +4,6 @@ import {
   View,
   requireNativeComponent,
   DeviceEventEmitter,
-  ViewPropTypes,
   StyleSheet,
 } from 'react-native';
 
@@ -83,7 +82,7 @@ const styles = StyleSheet.create({
 });
 
 BlurView.propTypes = {
-  ...(ViewPropTypes || View.propTypes),
+  ...(View.propTypes),
   blurAmount: PropTypes.number,
   blurType: PropTypes.oneOf(['dark', 'light', 'xlight']),
 
